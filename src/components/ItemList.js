@@ -15,7 +15,7 @@ const ItemList=({items})=>{
                 <div  className="w-9/12 ">
                     <div className="py-2">
                         <span className="font-bold">{i.card.info.name}</span>
-                        <span>₹{i.card.info.price/100}</span>
+                        <span>₹{i.card.info.price/100||i.card.info.defaultPrice}</span>
                     </div>
                     <p className="font-light text-xs">{i.card.info.description}</p>
                 </div>
